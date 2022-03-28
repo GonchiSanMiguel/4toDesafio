@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Taller Cerveceria</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="logo">
+		<a href="index.html">
+			<img src="img/logotaller.png" alt="Logo de El Taller Cerveceria" width="125" height="125">
+		</a>
+		<ul>
+			<li><a href="pages/nosotros.html">Nosotros</a></li>
+			<li><a href="pages/promociones.html">Promociones</a></li>
+			<li><a href="pages/carta.html">Carta</a></li>
+			<li><a href="pages/trabaja.html">Trabaja</a></li>
+			<li><a href="#ubicacion">Ubicación</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ul>
+	</nav>
+	
+	<header>
+		<img src="img/header.jpeg" alt="Variedades cervezas artesanales" width="100%" height="100%">
+	</header>
+	
+	<main>
+		<section>
+			<article class="textWhite">
+				<h1>CONTACTO</h1>
+				<!-- Inicia Formulario -->
+				<form action="envio.php" method="post" id="contacto">
+					<fieldset>
+						<legend>Dejános tu mensaje</legend>
+						<label for="Nombre">Nombre y Apellido</label>
+						<input class=bgLight type="text" placeholder="Gonzalo San Miguel" name="Nombre" id="Nombre">
+						<br>
+						<label for="Email">Email</label>
+						<input class=bgLight type="Email" placeholder="mail@mail.com" name="Email" id="Email">
+						<br>
+						<label for="Mensaje">Mensaje</label>
+						<br>
+						<textarea class=bgLight name="Mensaje" id="Mensaje" cols="100" rows="10" placeholder="Escribe aquí"></textarea>
+						<br>
+						<input type="reset" value="Cancelar" class="textBlack">
+						<input type="submit" value="Enviar" class="textBlack">
+					</fieldset>
+				</form>
+				<!-- Cierra Formulario -->
+			</article>
+			
+			<article class="textCenter">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.915272710478!2d-58.471526884747384!3d-34.55570056246604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7311de1c987%3A0x43b4d3a86a8d421a!2sEl%20Taller%20Cervecer%C3%ADa!5e0!3m2!1ses!2ses!4v1645559504909!5m2!1ses!2ses" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" id="ubicacion"></iframe>
+			</article>
+		</section>
+	</main>
+	
+	<footer class="textCenter">
+		<h3 class="textWhite">Conectate con nosotros</h3>
+		<div>
+			<a href="https://www.instagram.com/eltaller.cerveceria/?hl=es" target="_blank">
+				<img src="img/logoinstagram.png" alt=""	width="100" height="100">
+			</a>
+			<a href="https://api.whatsapp.com/send/?phone=5491136420027&text&app_absent=0" target="_blank">
+				<img src="img/logowhatsapp.png" alt="" width="100" height="100">
+			</a>
+		</div>
+		<h4 class="textWhite">Todos los derechos reservados El Taller Cervecería</h4>
+		<h4 class="textWhite">Web Site creado por GSM</h4>
+	</footer>
+</body>
+</html>

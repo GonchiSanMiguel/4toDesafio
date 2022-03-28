@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+
+*{
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+}	
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "nav" "header" "main" "footer";
+}
+
+nav{
+	background: linear-gradient(to bottom, sandybrown, #804002);
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding: 10px 5px 5px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	grid-area: nav;
+}
+	nav a{
+		display: flex;
+	}
+	nav ul{
+		list-style: none;
+		margin-right: 10px;
+		display: flex;
+	}
+		nav ul li{
+			display: flex;
+			margin-right: 20px;
+		}
+			nav ul li a{
+				text-decoration: none;
+				color: black;
+				font-size: 1.5rem;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			nav ul li a:hover{
+				color: white;
+				transform: translate(10px,5px);
+			}
+
+header{
+	grid-area: header;
+}						
+
+main{
+	grid-area: main;
+}
+
+main section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+h1{
+	text-transform: uppercase;
+}	
+
+article{
+	font-size: 1.5rem;
+	margin: 15px auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+
+fieldset{
+	border: white solid 2px;
+	margin: 15px auto;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	background-image: url("../img/patioo.jpeg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 1450px auto;
+}
+
+footer{
+	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+	footer a{
+	text-decoration: none;
+	margin: 20px;
+	padding: 10px;
+	}
+
+	footer h3{
+	font-size: 2rem;
+	margin: 20px auto;
+	}
+
+	footer h4{
+	font-size: 1rem;
+	margin: 20px auto;
+	}
+
+
+
+/*Selectores de clase*/
+
+.textCenter{
+	text-align: center;
+}
+
+.textWhite{
+	color: white;
+}
+
+.textBlack{
+	color: black;
+}
+
+.bgBlack{
+	background-color: black;
+}
+
+.bgLight{
+	background-color: #FFFFFF;
+}
+
+.logo a{
+	text-decoration: none;
+}
+
+/*Media queries*/
+
+
+@media (min-width: 1024px){
+	nav{
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	body{
+		grid-template-columns: 40vw 60vw;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav nav"
+		"header header"
+		"main main"
+		"footer footer";
+	}
+
+	main section{
+		flex-direction: row;
+	}
+
+	main section div{
+		align-self: flex-start;
+	}
+
+	main section content{
+		flex-direction: row wrap;
+	}
+}
